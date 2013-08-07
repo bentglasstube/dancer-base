@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>[% settings.appname %]</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+
+    <link href="/favicon.png" rel="shortcut icon">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">[% settings.appname %]</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Ipsum</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Dolor</a></li>
+                  <li><a href="#">Sit</a></li>
+                  <li><a href="#">Amet</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Et</li>
+                  <li><a href="#">Consecteur</a></li>
+                  <li><a href="#">Adipisicing</a></li>
+                  <li><a href="#">Elit</a></li>
+                </ul>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input type="text" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      [% content %]
+      <hr>
+      <footer><p>&copy; 2013</p></footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
