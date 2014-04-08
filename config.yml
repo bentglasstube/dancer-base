@@ -1,4 +1,4 @@
-appname: "DocuStore"
+appname: "Dancer Base"
 layout: "main"
 charset: "UTF-8"
 template: "template_toolkit"
@@ -6,10 +6,3 @@ engines:
   template_toolkit:
     start_tag: '[%'
     end_tag:   '%]'
-plugins:
-  DBIC:
-    default:
-      dsn: 'dbi:SQLite:data.sqlite'
-      schema_class: 'AppName::Schema'
-      options:
-        sqlite_unicode: 1
